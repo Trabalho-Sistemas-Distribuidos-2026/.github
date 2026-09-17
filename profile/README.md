@@ -1,6 +1,6 @@
 # ATHENA
 
-**Gestão Inteligente de Requisitos de Software**
+<img width="1920" height="1080" alt="Apresentação projeto ATHENA" src="https://github.com/user-attachments/assets/35d84113-8416-4ba6-ac1d-442b18c37deb" />
 
 ## Nome da Startup
 
@@ -48,6 +48,32 @@ A ATHENA surge a partir desse problema: **tornar visíveis as relações entre o
 
 ---
 
+## O contexto de um projeto se perde quando as relações não estão visíveis
+
+Um dos principais problemas identificados é a dificuldade de preservar o contexto completo de um projeto quando requisitos, documentos, regras, testes e decisões permanecem separados.
+
+A ausência de relações explícitas entre esses elementos gera quatro situações principais:
+
+### Informações ficam em fontes diferentes
+
+Os dados necessários para compreender um requisito podem estar distribuídos em diferentes ferramentas, documentos e ambientes.
+
+### Parte do conhecimento depende de pessoas específicas
+
+Quando determinadas relações ou decisões não estão documentadas, o entendimento do sistema passa a depender da memória dos integrantes que participaram dessas decisões.
+
+### Mudanças podem ser revisadas de forma incompleta
+
+Sem uma visão clara das dependências, uma equipe pode modificar um requisito sem perceber que outros artefatos também precisam ser revisados.
+
+### Inconsistências aparecem posteriormente
+
+Quando um impacto não é identificado no momento da alteração, o problema pode surgir apenas durante a implementação, os testes ou etapas posteriores, aumentando a possibilidade de retrabalho.
+
+A ATHENA busca reduzir esse problema tornando as relações entre os elementos do projeto mais visíveis e acessíveis.
+
+---
+
 ## Qual é a ideia?
 
 A proposta da ATHENA é desenvolver uma ferramenta para **automação de rastreabilidade e análise de impacto em requisitos de software**.
@@ -61,6 +87,38 @@ A ideia central pode ser resumida da seguinte forma:
 > Quando um requisito muda, a ATHENA ajuda a equipe a descobrir o que precisa ser revisado.
 
 A ferramenta não pretende substituir a análise realizada pelos profissionais responsáveis pelo projeto. Seu papel é apoiar esse processo, apresentando relações, possíveis impactos e informações relevantes para a tomada de decisão.
+
+---
+
+## Esboço da solução
+
+A ATHENA deverá apoiar o fluxo de análise de requisitos por meio de cinco ações principais.
+
+### 1. Registrar ou importar requisitos e documentos
+
+A plataforma permitirá centralizar requisitos e documentos relevantes para o projeto, criando uma base de informações que poderá ser utilizada nas análises posteriores.
+
+### 2. Relacionar requisitos, critérios e regras
+
+Os diferentes elementos do projeto poderão ser relacionados entre si, permitindo representar dependências e conexões existentes entre requisitos, critérios de aceitação, regras de negócio e outros artefatos.
+
+### 3. Detectar uma mudança em um requisito
+
+Quando um requisito for alterado, o sistema deverá identificar essa mudança e utilizar as relações existentes para iniciar a análise de impacto.
+
+### 4. Sugerir possíveis impactos com justificativa
+
+A ATHENA deverá apresentar os elementos que podem ser afetados pela alteração e fornecer uma justificativa para as sugestões apresentadas.
+
+O objetivo não é determinar automaticamente o que deve ser feito, mas oferecer informações que ajudem a equipe a compreender quais pontos precisam ser revisados.
+
+### 5. Registrar revisão humana e decisão
+
+As sugestões apresentadas pelo sistema deverão passar pela análise dos profissionais responsáveis pelo projeto.
+
+A decisão tomada pela equipe poderá ser registrada, mantendo um histórico das revisões e das decisões realizadas.
+
+Dessa forma, a ATHENA atua como uma ferramenta de apoio: **o sistema auxilia na identificação e análise dos impactos, enquanto a decisão final permanece com a equipe responsável pelo projeto**.
 
 ---
 
@@ -104,64 +162,6 @@ Por isso, a plataforma adota como princípio que **o sistema apoia a análise, m
 
 Em conjunto, esses trabalhos fundamentam a proposta de uma plataforma capaz de relacionar requisitos, apoiar a análise de mudanças, identificar possíveis problemas e fornecer informações para auxiliar a equipe durante a tomada de decisão.
 
-
----
-
-## O contexto de um projeto se perde quando as relações não estão visíveis
-
-Um dos principais problemas identificados é a dificuldade de preservar o contexto completo de um projeto quando requisitos, documentos, regras, testes e decisões permanecem separados.
-
-A ausência de relações explícitas entre esses elementos gera quatro situações principais:
-
-### Informações ficam em fontes diferentes
-
-Os dados necessários para compreender um requisito podem estar distribuídos em diferentes ferramentas, documentos e ambientes.
-
-### Parte do conhecimento depende de pessoas específicas
-
-Quando determinadas relações ou decisões não estão documentadas, o entendimento do sistema passa a depender da memória dos integrantes que participaram dessas decisões.
-
-### Mudanças podem ser revisadas de forma incompleta
-
-Sem uma visão clara das dependências, uma equipe pode modificar um requisito sem perceber que outros artefatos também precisam ser revisados.
-
-### Inconsistências aparecem posteriormente
-
-Quando um impacto não é identificado no momento da alteração, o problema pode surgir apenas durante a implementação, os testes ou etapas posteriores, aumentando a possibilidade de retrabalho.
-
-A ATHENA busca reduzir esse problema tornando as relações entre os elementos do projeto mais visíveis e acessíveis.
-
----
-
-## Esboço da solução
-
-A ATHENA deverá apoiar o fluxo de análise de requisitos por meio de cinco ações principais.
-
-### 1. Registrar ou importar requisitos e documentos
-
-A plataforma permitirá centralizar requisitos e documentos relevantes para o projeto, criando uma base de informações que poderá ser utilizada nas análises posteriores.
-
-### 2. Relacionar requisitos, critérios e regras
-
-Os diferentes elementos do projeto poderão ser relacionados entre si, permitindo representar dependências e conexões existentes entre requisitos, critérios de aceitação, regras de negócio e outros artefatos.
-
-### 3. Detectar uma mudança em um requisito
-
-Quando um requisito for alterado, o sistema deverá identificar essa mudança e utilizar as relações existentes para iniciar a análise de impacto.
-
-### 4. Sugerir possíveis impactos com justificativa
-
-A ATHENA deverá apresentar os elementos que podem ser afetados pela alteração e fornecer uma justificativa para as sugestões apresentadas.
-
-O objetivo não é determinar automaticamente o que deve ser feito, mas oferecer informações que ajudem a equipe a compreender quais pontos precisam ser revisados.
-
-### 5. Registrar revisão humana e decisão
-
-As sugestões apresentadas pelo sistema deverão passar pela análise dos profissionais responsáveis pelo projeto.
-
-A decisão tomada pela equipe poderá ser registrada, mantendo um histórico das revisões e das decisões realizadas.
-
-Dessa forma, a ATHENA atua como uma ferramenta de apoio: **o sistema auxilia na identificação e análise dos impactos, enquanto a decisão final permanece com a equipe responsável pelo projeto**.
 
 ---
 
