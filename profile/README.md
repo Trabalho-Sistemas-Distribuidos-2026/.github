@@ -92,7 +92,18 @@ O trabalho **“LLMs’ reshaping of people, processes, products, and society in
 
 Na proposta da ATHENA, recursos baseados em inteligência artificial podem ser utilizados como apoio à análise dos requisitos e dos possíveis impactos de mudanças. Entretanto, a revisão humana permanece como parte essencial do processo.
 
+
 Por isso, a plataforma adota como princípio que **o sistema apoia a análise, mas a decisão final continua com as pessoas responsáveis pelo projeto**.
+
+| Referência | Relação com a ATHENA |
+|---|---|
+| Arora et al. (2015) | Análise de impacto em requisitos escritos em linguagem natural |
+| Rubasinghe, Meedeniya e Perera (2018) | Rastreabilidade e análise de impacto em ambientes de desenvolvimento |
+| Pereira, Costa e Parreira Júnior (2024) | Detecção de anomalias em documentação de requisitos |
+| Tabarsi et al. (2026) | Uso de LLMs no desenvolvimento de software com participação e revisão humana |
+
+Em conjunto, esses trabalhos fundamentam a proposta de uma plataforma capaz de relacionar requisitos, apoiar a análise de mudanças, identificar possíveis problemas e fornecer informações para auxiliar a equipe durante a tomada de decisão.
+
 
 ---
 
@@ -119,21 +130,6 @@ Sem uma visão clara das dependências, uma equipe pode modificar um requisito s
 Quando um impacto não é identificado no momento da alteração, o problema pode surgir apenas durante a implementação, os testes ou etapas posteriores, aumentando a possibilidade de retrabalho.
 
 A ATHENA busca reduzir esse problema tornando as relações entre os elementos do projeto mais visíveis e acessíveis.
-
----
-
-## Quatro referências sustentam o problema e a solução
-
-As quatro referências utilizadas no projeto abordam diferentes partes do problema:
-
-| Referência | Relação com a ATHENA |
-|---|---|
-| Arora et al. (2015) | Análise de impacto em requisitos escritos em linguagem natural |
-| Rubasinghe, Meedeniya e Perera (2018) | Rastreabilidade e análise de impacto em ambientes de desenvolvimento |
-| Pereira, Costa e Parreira Júnior (2024) | Detecção de anomalias em documentação de requisitos |
-| Tabarsi et al. (2026) | Uso de LLMs no desenvolvimento de software com participação e revisão humana |
-
-Em conjunto, esses trabalhos fundamentam a proposta de uma plataforma capaz de relacionar requisitos, apoiar a análise de mudanças, identificar possíveis problemas e fornecer informações para auxiliar a equipe durante a tomada de decisão.
 
 ---
 
